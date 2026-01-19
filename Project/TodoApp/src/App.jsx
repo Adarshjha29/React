@@ -81,7 +81,7 @@ function App() {
           <div className="flex">
 
           <input  onChange={handleChange} value={todo} type="text" placeholder="Enter your todo..." className='w-full rounded-full px-5 py-2 text-black bg-white border' autoFocus />
-          <button onClick={handleAdd} disabled={todo.length<=3} className='bg-violet-800 mx-2 rounded-full hover:bg-violet-950 disabled:bg-violet-500 p-4 py-2 text-sm font-bold text-white'>Save</button>
+          <button onClick={handleAdd} disabled={todo.length<=3} className='bg-violet-800 mx-2 rounded-full hover:bg-violet-950 disabled:bg-violet-500 p-4 py-2 text-sm font-bold text-white cursor-pointer'>Save</button>
           </div>
          </div>
          <input className='my-4' id='show' onChange={toggleFinished} type="checkbox" checked={showFinished} /> 
